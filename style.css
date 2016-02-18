@@ -15,13 +15,12 @@
     border-radius: 3px;
     -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: #dfe3ea;
+    background-color: #BCDEE7;
     border: 1px solid #CCC;
     overflow: auto;
     padding: 0px;
     font-size: 18px;
     line-height: 22px;
-    color: #666; 
 }
 
 .example-chat header {
@@ -32,11 +31,9 @@
     -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.9), 0px 1px 2px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.9), 0px 1px 2px rgba(0, 0, 0, 0.1);
     border-radius: 3px 3px 0px 0px;
-    border-bottom: 1px solid #CCC;
     line-height: 24px;
-    font-size: 12px;
     text-align: center;
-    color: #999; 
+    color: #8F4949; 
 }
 
 .example-chat input {
@@ -65,18 +62,21 @@
     text-transform: uppercase;
     line-height: 32px;
     font-size: 14px;
-    color: #999;
+    color: #1F0E0E;
     position: absolute;
     top: 10px;
     left: 20px;
     z-index: 1; 
 }
 .example-chat .example-chat-toolbar input {
+    text-transform: uppercase;
+    line-height: 31px;
+    font-size: 14px;
     -webkit-box-shadow: none;
     box-shadow: none;
     border: 1px solid #FFF;
     padding-left: 100px;
-    color: #999; 
+    color: #1F0E0E; 
 }
 
 .example-chat .example-chat-toolbar input:active, .example-chat .example-chat-toolbar input:focus {
@@ -116,6 +116,18 @@
 
 /* SPEECH BUBBLES */
 
+.usernameClient{
+    float:right;
+    width:100%;
+    font-size: 12px;
+}
+
+.usernameNotClient{
+    float:left;
+    width:100%;
+    font-size: 12px;
+}
+
 .isUserClient{
     float:right;
 }
@@ -125,15 +137,12 @@
 	position: relative;
 	width: 85%;
     padding:5px;
-	text-align: center;
+	text-align: right;
 	line-height: 100px;
-	background-color: #fff;
+	background-color: rgba(187, 234, 153, 0.81);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	-webkit-box-shadow: -2px 2px 4px #888;
-	-moz-box-shadow: -2px 2px 4px #888;
-	box-shadow: -2px 2px 4px #888;
 }
 
 .speechUser:after
@@ -143,7 +152,7 @@
 	left: -9px;
 	top: 0px;
 	border: 9px solid;
-	border-color: #fff transparent transparent transparent;
+	border-color: rgba(187, 234, 153, 0.81) transparent transparent transparent;
 }
 
 .isUserNotClient{
@@ -155,15 +164,12 @@
 	position: relative;
 	width: 85%;
     padding:5px;
-	text-align: center;
+	text-align: left;
 	line-height: 100px;
 	background-color: #fff;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	-webkit-box-shadow: 2px 2px 4px #888;
-	-moz-box-shadow: 2px 2px 4px #888;
-	box-shadow: 2px 2px 4px #888;
 }
 
 .speechNotUser:after
