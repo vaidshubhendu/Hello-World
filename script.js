@@ -29,10 +29,16 @@ var chatScript = function(){
             $('.loader').remove();
         }
         //CREATE ELEMENTS MESSAGE & SANITIZE TEXT
-        if(username === 'Anonymous') var messageElement = $("<li class='isUserClient'>");
-        else var messageElement = $("<li class='isNotUserClient'>");
-        var nameElement = $("<strong class='example-chat-username'></strong>")
-        nameElement.text(username+' : ');
+        if(username === 'Anonymous') {
+            var messageElement = $("<li class='isUserClient'>");
+            var nameElement = $("<div class='usernameClient'><strong class='example-chat-username'></strong></div>")
+        }
+        else {
+            var messageElement = $("<li class='isUserNotClient'>");
+            var nameElement = $("<div class='usernameNotClient'><strong class='example-chat-username'></strong></div>")
+        }
+        
+        nameElement.text(username);
         messageElement.text(message).prepend(nameElement);
 
         //ADD MESSAGE
